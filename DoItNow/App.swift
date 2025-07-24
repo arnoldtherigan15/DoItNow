@@ -1,5 +1,5 @@
 //
-//  DoItNowApp.swift
+//  App.swift
 //  DoItNow
 //
 //  Created by Arnold Therigan on 24/07/25.
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct DoItNowApp: App {
+struct MyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreenView()  // Start with SplashScreen
         }
     }
 }

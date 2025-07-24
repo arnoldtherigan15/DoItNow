@@ -1,0 +1,15 @@
+{
+  "originHash" : "598bff8725916bf8667b982ceb746535eab8d665f8a2e63bc1c8006f1250b16c",
+  "pins" : [
+    {
+      "identity" : "arnoldkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/arnoldtherigan15/ArnoldKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fef9382394fb0cb1bb18666a72cbffc6e471f67e"
+      }
+    }
+  ],
+  "version" : 3
+}

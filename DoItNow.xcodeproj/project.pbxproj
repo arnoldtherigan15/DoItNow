@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		443CF1C52E32393D0052674F /* ArnoldKit in Frameworks */ = {isa = PBXBuildFile; productRef = 443CF1C42E32393D0052674F /* ArnoldKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		443CF18A2E3231740052674F /* DoItNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoItNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443CF1C52E32393D0052674F /* ArnoldKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = DoItNow;
 			packageProductDependencies = (
+				443CF1C42E32393D0052674F /* ArnoldKit */,
 			);
 			productName = DoItNow;
 			productReference = 443CF18A2E3231740052674F /* DoItNow.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 443CF1812E3231740052674F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				443CF1C32E32393C0052674F /* XCRemoteSwiftPackageReference "ArnoldKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 443CF18B2E3231740052674F /* Products */;
 			projectDirPath = "";
@@ -251,7 +260,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DoItNow/Preview Content\"";
 				DEVELOPMENT_TEAM = CFHBNBG3TM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -280,7 +288,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DoItNow/Preview Content\"";
 				DEVELOPMENT_TEAM = CFHBNBG3TM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -324,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		443CF1C32E32393C0052674F /* XCRemoteSwiftPackageReference "ArnoldKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/arnoldtherigan15/ArnoldKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		443CF1C42E32393D0052674F /* ArnoldKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 443CF1C32E32393C0052674F /* XCRemoteSwiftPackageReference "ArnoldKit" */;
+			productName = ArnoldKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 443CF1822E3231740052674F /* Project object */;
 }
