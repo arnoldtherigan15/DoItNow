@@ -10,14 +10,64 @@
 		443CF1C52E32393D0052674F /* ArnoldKit in Frameworks */ = {isa = PBXBuildFile; productRef = 443CF1C42E32393D0052674F /* ArnoldKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4498BDB02E337CDF00A7CDBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443CF1822E3231740052674F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443CF1892E3231740052674F;
+			remoteInfo = DoItNow;
+		};
+		4498BDC52E33839100A7CDBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443CF1822E3231740052674F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443CF1892E3231740052674F;
+			remoteInfo = DoItNow;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		443CF18A2E3231740052674F /* DoItNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoItNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4498BDAC2E337CDF00A7CDBE /* DoItNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoItNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4498BDBF2E33839000A7CDBE /* DoItNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoItNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4498BDCA2E33839C00A7CDBE /* Exceptions for "DoItNowTests" folder in "DoItNowTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/GettingStarted/View/GettingStartedUITests.swift,
+			);
+			target = 4498BDAB2E337CDF00A7CDBE /* DoItNowTests */;
+		};
+		4498BDCC2E33839F00A7CDBE /* Exceptions for "DoItNowTests" folder in "DoItNowUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/GettingStarted/View/GettingStartedUITests.swift,
+			);
+			target = 4498BDBE2E33839000A7CDBE /* DoItNowUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		443CF18C2E3231740052674F /* DoItNow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DoItNow;
+			sourceTree = "<group>";
+		};
+		4498BDAD2E337CDF00A7CDBE /* DoItNowTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4498BDCA2E33839C00A7CDBE /* Exceptions for "DoItNowTests" folder in "DoItNowTests" target */,
+				4498BDCC2E33839F00A7CDBE /* Exceptions for "DoItNowTests" folder in "DoItNowUITests" target */,
+			);
+			path = DoItNowTests;
+			sourceTree = "<group>";
+		};
+		4498BDC02E33839100A7CDBE /* DoItNowUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DoItNowUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +81,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4498BDA92E337CDF00A7CDBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4498BDBC2E33839000A7CDBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				443CF18C2E3231740052674F /* DoItNow */,
+				4498BDAD2E337CDF00A7CDBE /* DoItNowTests */,
+				4498BDC02E33839100A7CDBE /* DoItNowUITests */,
 				443CF18B2E3231740052674F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				443CF18A2E3231740052674F /* DoItNow.app */,
+				4498BDAC2E337CDF00A7CDBE /* DoItNowTests.xctest */,
+				4498BDBF2E33839000A7CDBE /* DoItNowUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +144,52 @@
 			productReference = 443CF18A2E3231740052674F /* DoItNow.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4498BDAB2E337CDF00A7CDBE /* DoItNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4498BDB22E337CDF00A7CDBE /* Build configuration list for PBXNativeTarget "DoItNowTests" */;
+			buildPhases = (
+				4498BDA82E337CDF00A7CDBE /* Sources */,
+				4498BDA92E337CDF00A7CDBE /* Frameworks */,
+				4498BDAA2E337CDF00A7CDBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4498BDB12E337CDF00A7CDBE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4498BDAD2E337CDF00A7CDBE /* DoItNowTests */,
+			);
+			name = DoItNowTests;
+			packageProductDependencies = (
+			);
+			productName = DoItNowTests;
+			productReference = 4498BDAC2E337CDF00A7CDBE /* DoItNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4498BDBE2E33839000A7CDBE /* DoItNowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4498BDC72E33839100A7CDBE /* Build configuration list for PBXNativeTarget "DoItNowUITests" */;
+			buildPhases = (
+				4498BDBB2E33839000A7CDBE /* Sources */,
+				4498BDBC2E33839000A7CDBE /* Frameworks */,
+				4498BDBD2E33839000A7CDBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4498BDC62E33839100A7CDBE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4498BDC02E33839100A7CDBE /* DoItNowUITests */,
+			);
+			name = DoItNowUITests;
+			packageProductDependencies = (
+			);
+			productName = DoItNowUITests;
+			productReference = 4498BDBF2E33839000A7CDBE /* DoItNowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -88,6 +202,14 @@
 				TargetAttributes = {
 					443CF1892E3231740052674F = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					4498BDAB2E337CDF00A7CDBE = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 443CF1892E3231740052674F;
+					};
+					4498BDBE2E33839000A7CDBE = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 443CF1892E3231740052674F;
 					};
 				};
 			};
@@ -109,12 +231,28 @@
 			projectRoot = "";
 			targets = (
 				443CF1892E3231740052674F /* DoItNow */,
+				4498BDAB2E337CDF00A7CDBE /* DoItNowTests */,
+				4498BDBE2E33839000A7CDBE /* DoItNowUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		443CF1882E3231740052674F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4498BDAA2E337CDF00A7CDBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4498BDBD2E33839000A7CDBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,7 +269,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4498BDA82E337CDF00A7CDBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4498BDBB2E33839000A7CDBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4498BDB12E337CDF00A7CDBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 443CF1892E3231740052674F /* DoItNow */;
+			targetProxy = 4498BDB02E337CDF00A7CDBE /* PBXContainerItemProxy */;
+		};
+		4498BDC62E33839100A7CDBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 443CF1892E3231740052674F /* DoItNow */;
+			targetProxy = 4498BDC52E33839100A7CDBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		443CF1962E3231750052674F /* Debug */ = {
@@ -309,6 +474,76 @@
 			};
 			name = Release;
 		};
+		4498BDB32E337CDF00A7CDBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CFHBNBG3TM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arnoldtherigan.DoItNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoItNow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoItNow";
+			};
+			name = Debug;
+		};
+		4498BDB42E337CDF00A7CDBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CFHBNBG3TM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arnoldtherigan.DoItNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoItNow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoItNow";
+			};
+			name = Release;
+		};
+		4498BDC82E33839100A7CDBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CFHBNBG3TM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arnoldtherigan.DoItNowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoItNow;
+			};
+			name = Debug;
+		};
+		4498BDC92E33839100A7CDBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CFHBNBG3TM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arnoldtherigan.DoItNowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoItNow;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -326,6 +561,24 @@
 			buildConfigurations = (
 				443CF1992E3231750052674F /* Debug */,
 				443CF19A2E3231750052674F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4498BDB22E337CDF00A7CDBE /* Build configuration list for PBXNativeTarget "DoItNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4498BDB32E337CDF00A7CDBE /* Debug */,
+				4498BDB42E337CDF00A7CDBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4498BDC72E33839100A7CDBE /* Build configuration list for PBXNativeTarget "DoItNowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4498BDC82E33839100A7CDBE /* Debug */,
+				4498BDC92E33839100A7CDBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

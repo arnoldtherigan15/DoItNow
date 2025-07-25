@@ -7,27 +7,43 @@
 
 import SwiftUI
 
-struct GettingStartedView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "star.fill")  // Replace with your image
-                .resizable()
-                .frame(width: 200, height: 200)
-                .padding()
+enum GettingStartedRoute: Hashable {
+    case register
+}
 
-            Text("Welcome to My App!")
-                .font(.title)
-                .padding()
-//
-//            NavigationLink(destination: RegisterView()) {
-//                Text("Get Started")
-//                    .font(.title2)
-//                    .padding()
-//                    .background(Color.blue)
-//                    .foregroundColor(.white)
-//                    .cornerRadius(10)
-//            }
+struct GettingStartedView: View {
+    @ObservedObject var viewModel = GettingStartedViewModel()
+    @State private var route: GettingStartedRoute?
+
+    var body: some View {
+        NavigationStack {
+            VStack {
+                GettingStartedSliderView(
+                    slides: viewModel.slides,
+                    currentIndex: $viewModel.currentIndex,
+                    onSkip: { route = .register }
+                )
+
+                Button(action: {
+                    route = .register
+                }) {
+                    Text(GETTING_STARTED_WORDING.getStartedLabel)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(12)
+                        .padding(.horizontal, 24)
+                }
+                .padding(.bottom, 40)
+            }
+            .navigationDestination(item: $route) { route in
+                switch route {
+                case .register:
+                    RegisterView()
+                }
+            }
+            .navigationBarHidden(true)
         }
-        .navigationTitle("Getting Started")
     }
 }
