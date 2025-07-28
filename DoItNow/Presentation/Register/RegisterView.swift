@@ -35,10 +35,10 @@ struct RegisterView: View {
                 }
 
                 VStack(spacing: 12) {
-                    InputField(icon: "person", placeholder: "Username", text: $viewModel.userName, errorMessage: viewModel.userNameError)
-                    InputField(icon: "mail", placeholder: "Email", text: $viewModel.email, errorMessage: viewModel.emailError)
-                    InputField(icon: "lock", placeholder: "Password", text: $viewModel.password, isSecure: true, errorMessage: viewModel.passwordError)
-                    InputField(icon: "lock", placeholder: "Confirm Password", text: $viewModel.confirmPassword, isSecure: true, errorMessage: viewModel.confirmPasswordError)
+                    InputField(icon: IMAGE_WORDING.profile, placeholder: "Username", text: $viewModel.userName, errorMessage: viewModel.userNameError)
+                    InputField(icon: IMAGE_WORDING.mail, placeholder: "Email", text: $viewModel.email, errorMessage: viewModel.emailError)
+                    InputField(icon: IMAGE_WORDING.lock, placeholder: "Password", text: $viewModel.password, isSecure: true, errorMessage: viewModel.passwordError)
+                    InputField(icon: IMAGE_WORDING.lock, placeholder: "Confirm Password", text: $viewModel.confirmPassword, isSecure: true, errorMessage: viewModel.confirmPasswordError)
                 }
                 .padding(.vertical)
 

@@ -21,4 +21,7 @@ enum GETTING_STARTED_WORDING {
     ]
     static let skipLabel = "Skip"
     static let getStartedLabel = "Get Started"
+    static let verifyAccount = "Verify Account"
+    static let verifySuccessDesc = "Your Account has been Verified Successfully!"
+    static let goToDashboardCTA = "Go to Dashboard"
 }

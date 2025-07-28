@@ -31,8 +31,11 @@ struct InputField: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack(spacing: 20) {
-                Image(systemName: icon)
+                Image(icon)
                     .renderingMode(.template)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 12)
                     .foregroundColor(.white)
                     .frame(width: 40, height: 40)
                     .background(Color.blue)

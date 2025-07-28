@@ -7,4 +7,5 @@
 
 enum GENERAL_WORDING {
     static let appTitle = "Do It Now!"
+    static let appDescription = "Management  App"
 }
